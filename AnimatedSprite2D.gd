@@ -1,9 +1,9 @@
-extends CharacterBody2D
+extends AnimatedSprite2D
 func _ready():
 	position = Vector2(get_viewport().size.x/2,get_viewport().size.y/2)
 	scale = Vector2(1.2,1.2)
 	set_process(true)
-@onready var _animated_sprite = $AnimatedSprite2D
+@onready var _animated_sprite = %AnimatedSprite2D
 func _process(delta):
 	var speed = 100.0
 	

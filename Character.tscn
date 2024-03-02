@@ -1,8 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://mm54hevg1o77"]
+[gd_scene load_steps=17 format=3 uid="uid://mm54hevg1o77"]
 
 [ext_resource type="Script" path="res://Character.gd" id="1_07vrj"]
 [ext_resource type="Texture2D" uid="uid://daj807lmpgrnj" path="res://New Piskel (1).png" id="2_w22r0"]
-[ext_resource type="Script" path="res://AnimatedSprite2D.gd" id="3_combf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_34cci"]
 atlas = ExtResource("2_w22r0")
@@ -132,15 +131,16 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jvrlc"]
-size = Vector2(12, 24)
+size = Vector2(12, 9)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_07vrj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_8sjm2")
 animation = &"idleback"
-script = ExtResource("3_combf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7.5)
 shape = SubResource("RectangleShape2D_jvrlc")
