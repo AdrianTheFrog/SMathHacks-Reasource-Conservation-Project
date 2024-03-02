@@ -15,27 +15,35 @@ var idle = "idleback"
 
 func _process(delta):
 	var speed = 100.0
+	velocity = Vector2(0,0)
 	
 	if Input.is_action_pressed('Up'):
-		position.y -= speed * delta
-		_animated_sprite.play("forward")
-		idle = "idleforward"
-		
-	elif Input.is_action_pressed('Down'):
-		position.y += speed * delta
-		_animated_sprite.play("back")
-		idle = "idleback"
-		
-	elif Input.is_action_pressed('Left'):
-		position.x -= speed * delta
+		velocity += Vector2.UP * speed
+		if not (Input.is_action_pressed('Left') or Input.is_action_pressed('Right')):
+			_animated_sprite.play("forward")
+			idle = "idleforward"
+	
+	if Input.is_action_pressed('Down'):
+		velocity += Vector2.DOWN * speed
+		if not (Input.is_action_pressed('Left') or Input.is_action_pressed('Right')):
+			_animated_sprite.play("back")
+			idle = "idleback"
+	
+	if Input.is_action_pressed('Left'):
+		velocity += Vector2.LEFT * speed
 		_animated_sprite.play("left")
 		idle = "idleleft"
-		
-	elif Input.is_action_pressed('Right'):
-		position.x += speed * delta
+	
+	if Input.is_action_pressed('Right'):
+		velocity += Vector2.RIGHT * speed
 		_animated_sprite.play("right")
 		idle = "idleright"
-		
-	else:
+	
+	if not (Input.is_action_pressed('Left') or Input.is_action_pressed('Right') or Input.is_action_pressed('Up') or Input.is_action_pressed('Down')):
 		_animated_sprite.play(idle)
+	 
+	move_and_slide()
+	
+	#round to viewport pixel, not scene pixel
+	%AnimatedSprite2D.position = round(position*ceil(get_viewport().size.x/500.))/float(ceil(get_viewport().size.x/500.)) - position
 
