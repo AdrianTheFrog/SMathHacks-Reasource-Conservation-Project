@@ -1,12 +1,19 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://xd5d2u2bpnia"]
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://xd5d2u2bpnia"]
 
 [ext_resource type="Texture2D" uid="uid://di5j467k5krmv" path="res://coal plant.png" id="1_ybimb"]
+[ext_resource type="Texture2D" uid="uid://c3v2swb7c5og5" path="res://tree.png" id="2_qqfw6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n7fcu"]
 texture = ExtResource("1_ybimb")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m1562"]
+texture = ExtResource("2_qqfw6")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
 [resource]
 tile_size = Vector2i(32, 32)
 sources/1 = SubResource("TileSetAtlasSource_n7fcu")
+sources/2 = SubResource("TileSetAtlasSource_m1562")
