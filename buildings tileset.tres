@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://dsd7lc7wgxyia" path="res://Buildings/recycleplant.png" id="4_l08ib"]
 [ext_resource type="Texture2D" uid="uid://qdb34pc4qj1e" path="res://Buildings/waterpump.png" id="4_rekhq"]
 [ext_resource type="Texture2D" uid="uid://bac8prbpduq4d" path="res://Buildings/oil pump 2.png" id="5_4ofnk"]
-[ext_resource type="Texture2D" uid="uid://cafon404r84lp" path="res://Buildings/Cave.png" id="6_obcul"]
-[ext_resource type="Texture2D" uid="uid://pegj0vyr0o6h" path="res://Buildings/Bank.png" id="7_k5tkm"]
+[ext_resource type="Texture2D" uid="uid://cq7psyshapbnd" path="res://Buildings/cavenew.png" id="6_jp7xe"]
+[ext_resource type="Texture2D" uid="uid://b6pgavb2b6838" path="res://Buildings/banknew.png" id="7_4nkdl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m1562"]
 texture = ExtResource("2_qqfw6")
@@ -49,7 +49,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.5, 2.75, 7.75, -0.75, 16, 16, 12.75, 16, -16, 14)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_287mq"]
-texture = ExtResource("6_obcul")
+texture = ExtResource("6_jp7xe")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -57,7 +57,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9.75, -3, 5.5, -6, 13.25, 7.25, -13.25, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cdd17"]
-texture = ExtResource("7_k5tkm")
+texture = ExtResource("7_4nkdl")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)

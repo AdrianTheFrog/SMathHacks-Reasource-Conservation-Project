@@ -1,7 +1,7 @@
-[gd_resource type="Theme" load_steps=8 format=3 uid="uid://bpvpg7fswoucc"]
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://bpvpg7fswoucc"]
 
-[ext_resource type="Texture2D" uid="uid://dbpqk7foxbtof" path="res://GUI.png" id="1_51g72"]
 [ext_resource type="FontFile" uid="uid://bu8t6fcjbd13w" path="res://Silkscreen-Regular.ttf" id="1_epcs1"]
+[ext_resource type="StyleBox" uid="uid://belaybtn605q7" path="res://box.tres" id="2_ix8je"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wdyl"]
 content_margin_left = 4.0
@@ -36,18 +36,6 @@ expand_margin_top = 2.0
 expand_margin_right = 2.0
 expand_margin_bottom = 2.0
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g3py2"]
-texture = ExtResource("1_51g72")
-region_rect = Rect2(145, 113, 46, 14)
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6i524"]
-texture = ExtResource("1_51g72")
-region_rect = Rect2(145, 81, 46, 14)
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6rgfy"]
-texture = ExtResource("1_51g72")
-region_rect = Rect2(145, 113, 46, 14)
-
 [resource]
 Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
 Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
@@ -69,6 +57,6 @@ Button/font_sizes/font_size = 16
 Button/fonts/font = ExtResource("1_epcs1")
 Button/styles/disabled = SubResource("StyleBoxFlat_0wdyl")
 Button/styles/focus = SubResource("StyleBoxFlat_u1l0l")
-Button/styles/hover = SubResource("StyleBoxTexture_g3py2")
-Button/styles/normal = SubResource("StyleBoxTexture_6i524")
-Button/styles/pressed = SubResource("StyleBoxTexture_6rgfy")
+Button/styles/hover = ExtResource("2_ix8je")
+Button/styles/normal = ExtResource("2_ix8je")
+Button/styles/pressed = ExtResource("2_ix8je")
