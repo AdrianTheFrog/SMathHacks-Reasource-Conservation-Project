@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://b3sbjd1vkii2h"]
+[gd_scene load_steps=7 format=3 uid="uid://b3sbjd1vkii2h"]
 
 [ext_resource type="TileSet" uid="uid://bigbiha614tnl" path="res://tileset.tres" id="1_dur42"]
 [ext_resource type="TileSet" uid="uid://xd5d2u2bpnia" path="res://buildings tileset.tres" id="2_0onu8"]
 [ext_resource type="PackedScene" uid="uid://mm54hevg1o77" path="res://Character.tscn" id="3_0w33h"]
+[ext_resource type="Script" path="res://place on tilemap.gd" id="3_m5c11"]
 [ext_resource type="Script" path="res://Camera2D.gd" id="4_e6nis"]
 
 [sub_resource type="Environment" id="Environment_xdtrx"]
@@ -26,6 +27,7 @@ texture_filter = 3
 tile_set = ExtResource("2_0onu8")
 format = 2
 layer_0/tile_data = PackedInt32Array(131071, 1, 0, 65534, 1, 0, 131069, 1, 0, 65533, 1, 0, 6, 1, 0, 65543, 1, 0, 131079, 1, 0, -65533, 2, 0, -131071, 2, 0, -131070, 2, 0, -196607, 2, 0, -131069, 2, 0, 196613, 2, 0, 262147, 2, 0, 131073, 2, 0, -3, 2, 0, -65537, 2, 0)
+script = ExtResource("3_m5c11")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_xdtrx")
