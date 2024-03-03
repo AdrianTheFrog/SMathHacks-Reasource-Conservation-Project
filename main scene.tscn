@@ -279,7 +279,7 @@ theme_override_font_sizes/font_size = 200
 text = "Oil pump:
 -Costs 5 bits
 -Generates 1 oil per sec
--Produces no emmisons
+-low carbon generation
 "
 
 [node name="recyclepanel" type="Panel" parent="Camera2D"]
@@ -398,10 +398,10 @@ text = "Bank
 -Costs 5 bits
 -Uses 5 power ps
 -Generates 1 bit ps
--Low Carbon generation
+-No Carbon generation
 "
 
-[node name="banktext2" type="Label" parent="Camera2D"]
+[node name="climatetext" type="Label" parent="Camera2D"]
 offset_left = 68.0
 offset_top = -133.0
 offset_right = 1458.0

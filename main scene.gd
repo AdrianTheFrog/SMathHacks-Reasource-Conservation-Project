@@ -25,7 +25,7 @@ func _process(delta):
 
 
 func _on_timer_timeout():
-	$Camera2D/Climatechange.value += 0.02 * GlobalVars.placedbuildings #put multiplicaton from buildings here
+	$Camera2D/Climatechange.value += 0.002 * GlobalVars.placedbuildings #put multiplicaton from buildings here
 	pass # Replace with function body.
 
 func _on_powerplantbutton_mouse_entered():
