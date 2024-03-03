@@ -8,6 +8,7 @@ const pi = 3.14159
 const tempNoiseScale = 5
 const altNoiseScale = 2
 
+
 func _ready():
 	temperature.seed = randi()
 	altitude.seed = randi()
