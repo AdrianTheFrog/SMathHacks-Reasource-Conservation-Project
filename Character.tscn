@@ -140,6 +140,7 @@ script = ExtResource("1_07vrj")
 unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_8sjm2")
 animation = &"idleback"
+speed_scale = 2.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 7.5)
