@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dlewy2ppts022"]
+[gd_scene load_steps=22 format=3 uid="uid://dlewy2ppts022"]
 
 [ext_resource type="TileSet" uid="uid://bigbiha614tnl" path="res://tileset.tres" id="1_dur42"]
 [ext_resource type="Script" path="res://main scene.gd" id="1_xhh2k"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cij3ermexjjux" path="res://uistuff/waterui.png" id="7_hrffa"]
 [ext_resource type="Texture2D" uid="uid://d3h27yw28kbem" path="res://uistuff/coalui.png" id="8_00j3h"]
 [ext_resource type="Texture2D" uid="uid://dyxfr110a1xsu" path="res://uistuff/bitsui.png" id="9_oegee"]
+[ext_resource type="Script" path="res://TimePowerLabel.gd" id="10_5bt7y"]
 [ext_resource type="Texture2D" uid="uid://bcv16fbofoniw" path="res://uistuff/oilui.png" id="13_xw0jl"]
 [ext_resource type="Theme" uid="uid://bpvpg7fswoucc" path="res://Buttonthemes.tres" id="15_07nre"]
 [ext_resource type="FontFile" uid="uid://bu8t6fcjbd13w" path="res://Silkscreen-Regular.ttf" id="17_dsinh"]
@@ -70,6 +71,22 @@ autostart = true
 [node name="timer for ui" type="Timer" parent="."]
 wait_time = 5.0
 autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="CanvasModulate2" type="CanvasModulate" parent="CanvasLayer"]
+script = ExtResource("3_28gw3")
+
+[node name="TimePowerLabel" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+offset_left = 24.0
+offset_top = 15.0
+offset_right = 323.0
+offset_bottom = 35.0
+theme_override_fonts/font = ExtResource("17_dsinh")
+theme_override_font_sizes/font_size = 30
+text = "Day 0, Spring 12:00 AM, 70 Kilowatts"
+script = ExtResource("10_5bt7y")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
@@ -365,6 +382,16 @@ Uses 5 power ps
 Generates 1 bit ps
 Low Carbon generation
 "
+
+[node name="banktext2" type="Label" parent="Camera2D"]
+offset_left = 68.0
+offset_top = -133.0
+offset_right = 1458.0
+offset_bottom = 251.0
+scale = Vector2(0.05, 0.05)
+theme_override_fonts/font = ExtResource("17_dsinh")
+theme_override_font_sizes/font_size = 300
+text = "Climate"
 
 [connection signal="timeout" from="timer for climatechange" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="timer for ui" to="." method="_on_timer_for_ui_timeout"]
