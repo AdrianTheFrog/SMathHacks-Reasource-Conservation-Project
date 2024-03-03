@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcv16fbofoniw"
-path="res://.godot/imported/oilui.png-01ce72853f46ede0682a3e80d0c5d0c1.ctex"
+uid="uid://bxdypmrpveba1"
+path="res://.godot/imported/coalNew.png-419c9a355fa6f1eac2a17f316cffea72.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://uistuff/oilui.png"
-dest_files=["res://.godot/imported/oilui.png-01ce72853f46ede0682a3e80d0c5d0c1.ctex"]
+source_file="res://uistuff/coalNew.png"
+dest_files=["res://.godot/imported/coalNew.png-419c9a355fa6f1eac2a17f316cffea72.ctex"]
 
 [params]
 

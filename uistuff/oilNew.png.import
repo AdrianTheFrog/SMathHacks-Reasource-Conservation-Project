@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyxfr110a1xsu"
-path="res://.godot/imported/bitsui.png-056fad8b4efd5ada352860f479486a71.ctex"
+uid="uid://c87es7tpoy2mf"
+path="res://.godot/imported/oilNew.png-acdbdd44ff723ac873425d62423325d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://uistuff/bitsui.png"
-dest_files=["res://.godot/imported/bitsui.png-056fad8b4efd5ada352860f479486a71.ctex"]
+source_file="res://uistuff/oilNew.png"
+dest_files=["res://.godot/imported/oilNew.png-acdbdd44ff723ac873425d62423325d6.ctex"]
 
 [params]
 

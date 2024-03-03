@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3h27yw28kbem"
-path="res://.godot/imported/coalui.png-e2a1c7c992aa43c00a9b61353ad900d4.ctex"
+uid="uid://c5m6qvhxx8pmq"
+path="res://.godot/imported/waterNew.png-4d6ca4e24363657f167a0701cbdb4379.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://uistuff/coalui.png"
-dest_files=["res://.godot/imported/coalui.png-e2a1c7c992aa43c00a9b61353ad900d4.ctex"]
+source_file="res://uistuff/waterNew.png"
+dest_files=["res://.godot/imported/waterNew.png-4d6ca4e24363657f167a0701cbdb4379.ctex"]
 
 [params]
 

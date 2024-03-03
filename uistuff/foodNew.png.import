@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cij3ermexjjux"
-path="res://.godot/imported/waterui.png-a3b6c855b1c9e0b389b976b54a1baca9.ctex"
+uid="uid://bjwsdbb2fwivo"
+path="res://.godot/imported/foodNew.png-1bd2496cd9f4583141d10cd9284f0190.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://uistuff/waterui.png"
-dest_files=["res://.godot/imported/waterui.png-a3b6c855b1c9e0b389b976b54a1baca9.ctex"]
+source_file="res://uistuff/foodNew.png"
+dest_files=["res://.godot/imported/foodNew.png-1bd2496cd9f4583141d10cd9284f0190.ctex"]
 
 [params]
 
