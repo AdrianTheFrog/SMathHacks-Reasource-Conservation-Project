@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dlewy2ppts022"]
+[gd_scene load_steps=21 format=3 uid="uid://dlewy2ppts022"]
 
 [ext_resource type="TileSet" uid="uid://bigbiha614tnl" path="res://tileset.tres" id="1_dur42"]
 [ext_resource type="Script" path="res://main scene.gd" id="1_xhh2k"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://dyxfr110a1xsu" path="res://uistuff/bitsui.png" id="9_oegee"]
 [ext_resource type="Texture2D" uid="uid://bcv16fbofoniw" path="res://uistuff/oilui.png" id="13_xw0jl"]
 [ext_resource type="Theme" uid="uid://bpvpg7fswoucc" path="res://Buttonthemes.tres" id="15_07nre"]
+[ext_resource type="FontFile" uid="uid://bu8t6fcjbd13w" path="res://Silkscreen-Regular.ttf" id="17_dsinh"]
 
 [sub_resource type="Environment" id="Environment_xdtrx"]
 background_mode = 3
@@ -113,7 +114,7 @@ texture = ExtResource("9_oegee")
 [node name="Powerplantbutton" type="Button" parent="Camera2D"]
 offset_left = -214.0
 offset_top = 106.0
-offset_right = 1460.0
+offset_right = 1757.0
 offset_bottom = 448.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
@@ -121,9 +122,9 @@ theme_override_font_sizes/font_size = 250
 text = "Power Plant"
 
 [node name="Waterpumpbutton" type="Button" parent="Camera2D"]
-offset_left = -124.0
+offset_left = -109.0
 offset_top = 106.0
-offset_right = 1476.0
+offset_right = 1830.0
 offset_bottom = 456.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
@@ -176,6 +177,7 @@ offset_top = -135.0
 offset_right = 943.0
 offset_bottom = 411.0
 scale = Vector2(0.05, 0.05)
+theme_override_fonts/font = ExtResource("17_dsinh")
 theme_override_font_sizes/font_size = 400
 
 [node name="woodui" type="Label" parent="Camera2D"]
@@ -184,6 +186,7 @@ offset_top = -117.0
 offset_right = 296.0
 offset_bottom = 429.0
 scale = Vector2(0.05, 0.05)
+theme_override_fonts/font = ExtResource("17_dsinh")
 theme_override_font_sizes/font_size = 400
 
 [node name="waterui" type="Label" parent="Camera2D"]
@@ -192,6 +195,7 @@ offset_top = -100.0
 offset_right = 291.0
 offset_bottom = 446.0
 scale = Vector2(0.05, 0.05)
+theme_override_fonts/font = ExtResource("17_dsinh")
 theme_override_font_sizes/font_size = 400
 
 [node name="coalui" type="Label" parent="Camera2D"]
@@ -200,6 +204,7 @@ offset_top = -83.0
 offset_right = 292.0
 offset_bottom = 463.0
 scale = Vector2(0.05, 0.05)
+theme_override_fonts/font = ExtResource("17_dsinh")
 theme_override_font_sizes/font_size = 400
 
 [node name="oilui" type="Label" parent="Camera2D"]
@@ -208,6 +213,7 @@ offset_top = -66.0
 offset_right = 295.0
 offset_bottom = 480.0
 scale = Vector2(0.05, 0.05)
+theme_override_fonts/font = ExtResource("17_dsinh")
 theme_override_font_sizes/font_size = 400
 
 [node name="bitsui" type="Label" parent="Camera2D"]
@@ -216,6 +222,7 @@ offset_top = -47.0
 offset_right = 299.0
 offset_bottom = 499.0
 scale = Vector2(0.05, 0.05)
+theme_override_fonts/font = ExtResource("17_dsinh")
 theme_override_font_sizes/font_size = 400
 
 [node name="Climatechange" type="ProgressBar" parent="Camera2D"]
