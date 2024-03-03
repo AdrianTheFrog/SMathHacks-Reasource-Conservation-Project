@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dlewy2ppts022"]
+[gd_scene load_steps=19 format=3 uid="uid://dlewy2ppts022"]
 
 [ext_resource type="TileSet" uid="uid://bigbiha614tnl" path="res://tileset.tres" id="1_dur42"]
 [ext_resource type="Script" path="res://main scene.gd" id="1_xhh2k"]
@@ -12,7 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://cij3ermexjjux" path="res://uistuff/waterui.png" id="7_hrffa"]
 [ext_resource type="Texture2D" uid="uid://d3h27yw28kbem" path="res://uistuff/coalui.png" id="8_00j3h"]
 [ext_resource type="Texture2D" uid="uid://dyxfr110a1xsu" path="res://uistuff/bitsui.png" id="9_oegee"]
-[ext_resource type="Script" path="res://TreeButton.gd" id="13_1gwdv"]
 [ext_resource type="Texture2D" uid="uid://bcv16fbofoniw" path="res://uistuff/oilui.png" id="13_xw0jl"]
 [ext_resource type="Theme" uid="uid://b75f4m6ahlfqu" path="res://Buttonthemes.tres" id="15_07nre"]
 [ext_resource type="Script" path="res://powerui.gd" id="15_pnjia"]
@@ -109,7 +108,6 @@ theme = ExtResource("15_07nre")
 theme_override_font_sizes/font_size = 250
 toggle_mode = true
 text = "Power Plant"
-script = ExtResource("13_1gwdv")
 
 [node name="Waterpumpbutton" type="Button" parent="Camera2D"]
 offset_left = -124.0
@@ -204,3 +202,13 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_lo0op")
 show_percentage = false
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="button_up" from="Camera2D/Powerplantbutton" to="TileMap2" method="_on_powerplantbutton_button_up"]
+[connection signal="pressed" from="Camera2D/Powerplantbutton" to="." method="_on_powerplantbutton_pressed"]
+[connection signal="pressed" from="Camera2D/Powerplantbutton" to="TileMap2" method="_on_powerplantbutton_pressed"]
+[connection signal="toggled" from="Camera2D/Powerplantbutton" to="TileMap2" method="_on_powerplantbutton_toggled"]
+[connection signal="pressed" from="Camera2D/Waterpumpbutton" to="." method="_on_waterpumpbutton_pressed"]
+[connection signal="pressed" from="Camera2D/Waterpumpbutton" to="TileMap2" method="_on_waterpumpbutton_pressed"]
+[connection signal="pressed" from="Camera2D/Oilpumpbutton" to="." method="_on_oilpumpbutton_pressed"]
+[connection signal="pressed" from="Camera2D/Oilpumpbutton" to="TileMap2" method="_on_oilpumpbutton_pressed"]
+[connection signal="pressed" from="Camera2D/Recyclebutton" to="." method="_on_recyclebutton_pressed"]
+[connection signal="pressed" from="Camera2D/Recyclebutton" to="TileMap2" method="_on_recyclebutton_pressed"]

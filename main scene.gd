@@ -29,3 +29,11 @@ func _process(delta):
 
 func _on_timer_timeout():
 	$Camera2D/Climatechange.value += 1 #put multiplicaton from buildings here
+
+
+
+
+
+
+	
+	pass # Replace with function body.

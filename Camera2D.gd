@@ -10,3 +10,5 @@ func _process(delta):
 	lookAheadPos = lookAheadPos*(1-(lookAheadResponse)*delta) + lookAheadDistance*%Character.get_real_velocity()*lookAheadResponse*delta
 	set_global_position(get_global_position()*(1-(speed*delta))+(%Character.get_global_position()+lookAheadPos)*speed*delta)
 	zoom = Vector2(get_viewport().size.x/500.,get_viewport().size.x/500.).ceil()
+
+
