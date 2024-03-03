@@ -371,4 +371,6 @@ Low Carbon generation
 [connection signal="pressed" from="Camera2D/Recyclebutton" to="." method="_on_recyclebutton_pressed"]
 [connection signal="pressed" from="Camera2D/Recyclebutton" to="TileMap2" method="_on_recyclebutton_pressed"]
 [connection signal="pressed" from="Camera2D/Bankbutton" to="." method="_on_bankbutton_pressed"]
+[connection signal="pressed" from="Camera2D/Bankbutton" to="TileMap2" method="_on_bankbutton_pressed"]
 [connection signal="pressed" from="Camera2D/Coalminebutton" to="." method="_on_coalminebutton_pressed"]
+[connection signal="pressed" from="Camera2D/Coalminebutton" to="TileMap2" method="_on_coalminebutton_pressed"]

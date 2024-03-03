@@ -15,6 +15,12 @@ func _on_oilpumpbutton_pressed():
 func _on_recyclebutton_pressed():
 	placingvalue = 2
 
+func _on_bankbutton_pressed():
+	placingvalue = 6
+
+func _on_coalminebutton_pressed():
+	placingvalue = 5
+
 func _input(event):
 	# Mouse in viewport coordinates.
 	
@@ -22,3 +28,4 @@ func _input(event):
 		set_cell(0, Vector2i(floor(get_local_mouse_position()/32)), placingvalue, Vector2i(0,0))
 		print(ceil(get_local_mouse_position()/32))
 		print(placingvalue)
+
