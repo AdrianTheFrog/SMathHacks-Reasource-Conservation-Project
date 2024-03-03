@@ -1,8 +1,8 @@
 extends TileMap
 var temperature = FastNoiseLite.new()
 var altitude = FastNoiseLite.new()
-const width = 500/16
-const height = 500/16
+const width = 600/16
+const height = 600/16
 const pi = 3.14159
 
 const tempNoiseScale = 5
