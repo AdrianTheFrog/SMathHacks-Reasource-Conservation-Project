@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dlewy2ppts022"]
+[gd_scene load_steps=18 format=3 uid="uid://dlewy2ppts022"]
 
 [ext_resource type="TileSet" uid="uid://bigbiha614tnl" path="res://tileset.tres" id="1_dur42"]
 [ext_resource type="Script" path="res://main scene.gd" id="1_xhh2k"]
@@ -14,7 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://dyxfr110a1xsu" path="res://uistuff/bitsui.png" id="9_oegee"]
 [ext_resource type="Texture2D" uid="uid://bcv16fbofoniw" path="res://uistuff/oilui.png" id="13_xw0jl"]
 [ext_resource type="Theme" uid="uid://b75f4m6ahlfqu" path="res://Buttonthemes.tres" id="15_07nre"]
-[ext_resource type="Script" path="res://powerui.gd" id="15_pnjia"]
 
 [sub_resource type="Environment" id="Environment_xdtrx"]
 background_mode = 3
@@ -169,7 +168,6 @@ offset_right = 943.0
 offset_bottom = 411.0
 scale = Vector2(0.05, 0.05)
 theme_override_font_sizes/font_size = 400
-script = ExtResource("15_pnjia")
 
 [node name="woodui" type="Label" parent="Camera2D"]
 offset_left = 186.0
