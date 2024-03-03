@@ -12,9 +12,9 @@
 [ext_resource type="Texture2D" uid="uid://cij3ermexjjux" path="res://uistuff/waterui.png" id="7_hrffa"]
 [ext_resource type="Texture2D" uid="uid://d3h27yw28kbem" path="res://uistuff/coalui.png" id="8_00j3h"]
 [ext_resource type="Texture2D" uid="uid://dyxfr110a1xsu" path="res://uistuff/bitsui.png" id="9_oegee"]
-[ext_resource type="Texture2D" uid="uid://dpfsds7gfsk76" path="res://uistuff/foodui.png" id="10_d0gul"]
 [ext_resource type="Script" path="res://TreeButton.gd" id="13_1gwdv"]
 [ext_resource type="Texture2D" uid="uid://bcv16fbofoniw" path="res://uistuff/oilui.png" id="13_xw0jl"]
+[ext_resource type="Theme" uid="uid://b75f4m6ahlfqu" path="res://Buttonthemes.tres" id="15_07nre"]
 [ext_resource type="Script" path="res://powerui.gd" id="15_pnjia"]
 
 [sub_resource type="Environment" id="Environment_xdtrx"]
@@ -67,7 +67,7 @@ script = ExtResource("4_e6nis")
 offset_left = 167.0
 offset_top = -130.0
 offset_right = 234.0
-offset_bottom = 7.0
+offset_bottom = -17.0
 
 [node name="Powerui" type="Sprite2D" parent="Camera2D"]
 position = Vector2(177.375, -119.25)
@@ -99,19 +99,50 @@ position = Vector2(179, -31)
 scale = Vector2(0.0405405, 0.0486111)
 texture = ExtResource("9_oegee")
 
-[node name="Foodui" type="Sprite2D" parent="Camera2D"]
-position = Vector2(183, -9)
-scale = Vector2(0.0705128, 0.0673077)
-texture = ExtResource("10_d0gul")
-
-[node name="TreeButton" type="Button" parent="Camera2D"]
-offset_left = -179.0
-offset_top = 102.0
-offset_right = -159.0
-offset_bottom = 110.0
-theme_override_font_sizes/font_size = 10
-text = "Tree "
+[node name="Powerplantbutton" type="Button" parent="Camera2D"]
+offset_left = -214.0
+offset_top = 106.0
+offset_right = 1460.0
+offset_bottom = 448.0
+scale = Vector2(0.05, 0.05)
+theme = ExtResource("15_07nre")
+theme_override_font_sizes/font_size = 250
+toggle_mode = true
+text = "Power Plant"
 script = ExtResource("13_1gwdv")
+
+[node name="Waterpumpbutton" type="Button" parent="Camera2D"]
+offset_left = -124.0
+offset_top = 106.0
+offset_right = 1476.0
+offset_bottom = 456.0
+scale = Vector2(0.05, 0.05)
+theme = ExtResource("15_07nre")
+theme_override_font_sizes/font_size = 250
+toggle_mode = true
+text = "Water Plant"
+
+[node name="Oilpumpbutton" type="Button" parent="Camera2D"]
+offset_left = -214.0
+offset_top = 83.0
+offset_right = 1184.0
+offset_bottom = 433.0
+scale = Vector2(0.05, 0.05)
+theme = ExtResource("15_07nre")
+theme_override_font_sizes/font_size = 250
+toggle_mode = true
+text = "Oil Pump"
+
+[node name="Recyclebutton" type="Button" parent="Camera2D"]
+offset_left = -135.0
+offset_top = 83.0
+offset_right = 1685.0
+offset_bottom = 433.0
+scale = Vector2(0.05, 0.05)
+theme = ExtResource("15_07nre")
+theme_override_font_sizes/font_size = 250
+toggle_mode = true
+text = "Recycle Plant"
 
 [node name="powerui" type="Label" parent="Camera2D"]
 offset_left = 183.0
@@ -159,14 +190,6 @@ offset_left = 189.0
 offset_top = -47.0
 offset_right = 299.0
 offset_bottom = 499.0
-scale = Vector2(0.05, 0.05)
-theme_override_font_sizes/font_size = 400
-
-[node name="foodui" type="Label" parent="Camera2D"]
-offset_left = 198.0
-offset_top = -24.0
-offset_right = 308.0
-offset_bottom = 522.0
 scale = Vector2(0.05, 0.05)
 theme_override_font_sizes/font_size = 400
 

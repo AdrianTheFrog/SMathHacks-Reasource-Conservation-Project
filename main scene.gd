@@ -5,7 +5,7 @@ var water = 0
 var coal = 0
 var oil = 0
 var bits = 0
-var food = 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
@@ -21,7 +21,7 @@ func _process(delta):
 	$Camera2D/coalui.text = ":" + str(coal)
 	$Camera2D/oilui.text = ":" + str(oil)
 	$Camera2D/bitsui.text = ":" + str(bits)
-	$Camera2D/foodui.text = ":" + str(food)
+	
 	
 		
 	pass
