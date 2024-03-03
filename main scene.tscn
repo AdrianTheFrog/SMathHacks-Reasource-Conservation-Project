@@ -89,15 +89,15 @@ script = ExtResource("3_28gw3")
 unique_name_in_owner = true
 offset_left = 24.0
 offset_top = 15.0
-offset_right = 323.0
-offset_bottom = 35.0
+offset_right = 748.0
+offset_bottom = 54.0
 theme_override_fonts/font = ExtResource("17_dsinh")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 40
 text = "Day 0, Spring 12:00 AM, 70 Kilowatts"
 script = ExtResource("10_5bt7y")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3, 3)
+zoom = Vector2(4, 4)
 script = ExtResource("4_e6nis")
 
 [node name="Panel" type="Panel" parent="Camera2D"]
@@ -139,10 +139,10 @@ texture = ExtResource("17_coqb7")
 
 [node name="Powerplantbutton" type="Button" parent="Camera2D"]
 texture_filter = 1
-offset_left = -214.0
-offset_top = 106.0
-offset_right = 1846.0
-offset_bottom = 507.0
+offset_left = -234.0
+offset_top = 109.0
+offset_right = 1826.0
+offset_bottom = 510.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
 theme_override_font_sizes/font_size = 250
@@ -150,10 +150,10 @@ text = "Power Plant"
 
 [node name="Waterpumpbutton" type="Button" parent="Camera2D"]
 texture_filter = 1
-offset_left = -108.0
-offset_top = 106.0
-offset_right = 2272.0
-offset_bottom = 507.0
+offset_left = -128.0
+offset_top = 109.0
+offset_right = 2252.0
+offset_bottom = 510.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
 theme_override_font_sizes/font_size = 250
@@ -161,10 +161,10 @@ text = "Water Plant"
 
 [node name="Oilpumpbutton" type="Button" parent="Camera2D"]
 texture_filter = 1
-offset_left = -214.0
-offset_top = 83.0
-offset_right = 1846.0
-offset_bottom = 484.0
+offset_left = -234.0
+offset_top = 86.0
+offset_right = 1826.0
+offset_bottom = 487.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
 theme_override_font_sizes/font_size = 250
@@ -172,10 +172,10 @@ text = "Oil Pump"
 
 [node name="Recyclebutton" type="Button" parent="Camera2D"]
 texture_filter = 1
-offset_left = -108.0
-offset_top = 83.0
-offset_right = 2272.0
-offset_bottom = 484.0
+offset_left = -128.0
+offset_top = 86.0
+offset_right = 2252.0
+offset_bottom = 487.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
 theme_override_font_sizes/font_size = 250
@@ -183,10 +183,10 @@ text = "Recycle Plant"
 
 [node name="Bankbutton" type="Button" parent="Camera2D"]
 texture_filter = 1
-offset_left = -214.0
-offset_top = 60.0
-offset_right = 1846.0
-offset_bottom = 461.0
+offset_left = -234.0
+offset_top = 63.0
+offset_right = 1826.0
+offset_bottom = 464.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
 theme_override_font_sizes/font_size = 250
@@ -194,10 +194,10 @@ text = "Bank"
 
 [node name="Coalminebutton" type="Button" parent="Camera2D"]
 texture_filter = 1
-offset_left = -108.0
-offset_top = 60.0
-offset_right = 2272.0
-offset_bottom = 461.0
+offset_left = -128.0
+offset_top = 63.0
+offset_right = 2252.0
+offset_bottom = 464.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
 theme_override_font_sizes/font_size = 250
