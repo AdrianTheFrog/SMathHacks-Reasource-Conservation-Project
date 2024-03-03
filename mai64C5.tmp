@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://b3sbjd1vkii2h"]
+
+[ext_resource type="TileSet" uid="uid://bigbiha614tnl" path="res://tileset.tres" id="1_dur42"]
+[ext_resource type="TileSet" uid="uid://xd5d2u2bpnia" path="res://buildings tileset.tres" id="2_0onu8"]
+[ext_resource type="Script" path="res://TileMap.gd" id="2_0sqgh"]
+[ext_resource type="PackedScene" uid="uid://mm54hevg1o77" path="res://Character.tscn" id="3_0w33h"]
+[ext_resource type="Script" path="res://place on tilemap.gd" id="3_m5c11"]
+[ext_resource type="Script" path="res://Camera2D.gd" id="4_e6nis"]
+
+[sub_resource type="Environment" id="Environment_xdtrx"]
+background_mode = 3
+glow_enabled = true
+glow_intensity = 0.89
+glow_blend_mode = 1
+glow_hdr_threshold = 0.79
+glow_hdr_luminance_cap = 249.14
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 3
+tile_set = ExtResource("1_dur42")
+format = 2
+layer_0/tile_data = PackedInt32Array(589820, 131073, 1, 524285, 131073, 1, 458750, 131073, 1, 458751, 131073, 1, 327680, 131073, 1, 262145, 131073, 1, 196610, 131073, 1, 131075, 131073, 1, 131076, 131073, 1, 65541, 131073, 1, 6, 196609, 2, -65529, 131073, 1, -65528, 131073, 1, -131063, 131073, 1, -196598, 131073, 1, -262133, 131073, 1, -327668, 131073, 1, -327667, 131073, 1, -393202, 131073, 1, -458737, 131073, 1, 327698, 196609, 2, 327697, 196609, 2, 262160, 196609, 2, 262159, 196609, 2, 196622, 196609, 2, 196621, 196609, 2, 196620, 196609, 2, 131083, 196609, 2, 131082, 196609, 2, 65545, 196609, 2, 65544, 196609, 2, 65543, 196609, 2, 5, 196609, 2, -65532, 196609, 2, -65533, 196609, 2, -65534, 196609, 2, -131071, 196609, 2, -131072, 196609, 2, -131073, 196609, 2, -131074, 196609, 2, -131075, 196609, 2, -196612, 196609, 2, -196613, 196609, 2, -262150, 196609, 2, -262151, 196609, 2, 524290, 65537, 1)
+script = ExtResource("2_0sqgh")
+
+[node name="TileMap2" type="TileMap" parent="."]
+texture_filter = 3
+tile_set = ExtResource("2_0onu8")
+format = 2
+layer_0/tile_data = PackedInt32Array(131071, 1, 0, 65534, 1, 0, 131069, 1, 0, 65533, 1, 0, 6, 1, 0, 65543, 1, 0, 131079, 1, 0, -65533, 2, 0, -131071, 2, 0, -131070, 2, 0, -196607, 2, 0, -131069, 2, 0, 196613, 2, 0, 262147, 2, 0, 131073, 2, 0, -3, 2, 0, -65537, 2, 0)
+script = ExtResource("3_m5c11")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_xdtrx")
+
+[node name="Character" parent="." instance=ExtResource("3_0w33h")]
+unique_name_in_owner = true
+texture_filter = 3
+position = Vector2(3, 2)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.07, 0.07)
+script = ExtResource("4_e6nis")
