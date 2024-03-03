@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://b3sbjd1vkii2h"]
+[gd_scene load_steps=7 format=3 uid="uid://dlewy2ppts022"]
 
-[ext_resource type="TileSet" uid="uid://bigbiha614tnl" path="res://tileset.tres" id="1_dur42"]
-[ext_resource type="TileSet" uid="uid://xd5d2u2bpnia" path="res://buildings tileset.tres" id="2_0onu8"]
+[ext_resource type="TileSet" uid="uid://duwyit720ltpx" path="res://tileset.tres" id="1_dur42"]
+[ext_resource type="TileSet" path="res://buildings tileset.tres" id="2_0onu8"]
 [ext_resource type="PackedScene" uid="uid://mm54hevg1o77" path="res://Character.tscn" id="3_0w33h"]
 [ext_resource type="Script" path="res://place on tilemap.gd" id="3_m5c11"]
 [ext_resource type="Script" path="res://Camera2D.gd" id="4_e6nis"]
