@@ -28,87 +28,75 @@ func _on_timer_timeout():
 	$Camera2D/Climatechange.value += 1 #put multiplicaton from buildings here
 	pass # Replace with function body.
 
-
-func _on_powerplantbutton_pressed():
+func _on_powerplantbutton_mouse_entered():
 	var powerlabel = get_node("Camera2D/powerplanttext")
 	var powerback = get_node("Camera2D/powerplantpanel")
 	powerback.visible = true
 	powerlabel.visible = true
-	pass # Replace with function body.
-
-
-func _on_waterpumpbutton_pressed():
+	
+func _on_waterpumpbutton_mouse_entered():
 	var waterlabel = get_node("Camera2D/waterplanttext")
 	var waterback = get_node("Camera2D/waterplantpanel")
 	waterback.visible = true
 	waterlabel.visible = true
-	pass # Replace with function body.
-
-
-func _on_oilpumpbutton_pressed():
+	
+func _on_oilpumpbutton_mouse_entered():
 	var oillabel = get_node("Camera2D/oiltext")
 	var oilback = get_node("Camera2D/oilpumppanel")
 	oilback.visible = true
 	oillabel.visible = true
 	
-	pass # Replace with function body.
-
-
-func _on_recyclebutton_pressed():
+func _on_recyclebutton_mouse_entered():
 	var recyclelabel = get_node("Camera2D/recycletext")
 	var recycleback = get_node("Camera2D/recyclepanel")
 	recycleback.visible = true
 	recyclelabel.visible = true
-	pass # Replace with function body.
 
-func _on_bankbutton_pressed():
+func _on_bankbutton_mouse_entered():
 	var banklabel = get_node("Camera2D/banktext")
 	var bankback = get_node("Camera2D/bankpanel")
 	bankback.visible = true
 	banklabel.visible = true
-	pass # Replace with function body.
 
-func _on_coalminebutton_pressed():
+func _on_coalminebutton_mouse_entered():
 	var coallabel = get_node("Camera2D/coalminetext")
 	var coalback = get_node("Camera2D/coalminepanel")
 	coalback.visible = true
 	coallabel.visible = true
-	pass # Replace with function body.
-
-func _on_timer_for_ui_timeout():
-	var oillabel = get_node("Camera2D/oiltext")
-	var oilback = get_node("Camera2D/oilpumppanel")
-	oilback.visible = false
-	oillabel.visible = false
 	
+	
+func _on_powerplantbutton_mouse_exited():
 	var powerlabel = get_node("Camera2D/powerplanttext")
 	var powerback = get_node("Camera2D/powerplantpanel")
 	powerback.visible = false
 	powerlabel.visible = false
-	
+func _on_waterpumpbutton_mouse_exited():
 	var waterlabel = get_node("Camera2D/waterplanttext")
 	var waterback = get_node("Camera2D/waterplantpanel")
 	waterback.visible = false
 	waterlabel.visible = false
 	
+func _on_oilpumpbutton_mouse_exited():
+	var oillabel = get_node("Camera2D/oiltext")
+	var oilback = get_node("Camera2D/oilpumppanel")
+	oilback.visible = false
+	oillabel.visible = false
+	
+func _on_recyclebutton_mouse_exited():
 	var recyclelabel = get_node("Camera2D/recycletext")
 	var recycleback = get_node("Camera2D/recyclepanel")
 	recycleback.visible = false
 	recyclelabel.visible = false
-	
+
+func _on_bankbutton_mouse_exited():
 	var banklabel = get_node("Camera2D/banktext")
 	var bankback = get_node("Camera2D/bankpanel")
 	bankback.visible = false
 	banklabel.visible = false
-	
+
+func _on_coalminebutton_mouse_exited():
 	var coallabel = get_node("Camera2D/coalminetext")
 	var coalback = get_node("Camera2D/coalminepanel")
 	coalback.visible = false
 	coallabel.visible = false
-	pass # Replace with function body.
-
-
-
-
-
-
+	
