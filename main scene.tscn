@@ -1,10 +1,18 @@
-[gd_scene load_steps=7 format=3 uid="uid://dlewy2ppts022"]
+[gd_scene load_steps=15 format=3 uid="uid://dlewy2ppts022"]
 
 [ext_resource type="TileSet" uid="uid://duwyit720ltpx" path="res://tileset.tres" id="1_dur42"]
-[ext_resource type="TileSet" path="res://buildings tileset.tres" id="2_0onu8"]
+[ext_resource type="TileSet" uid="uid://cxb4ovjti0sjt" path="res://buildings tileset.tres" id="2_0onu8"]
 [ext_resource type="PackedScene" uid="uid://mm54hevg1o77" path="res://Character.tscn" id="3_0w33h"]
 [ext_resource type="Script" path="res://place on tilemap.gd" id="3_m5c11"]
 [ext_resource type="Script" path="res://Camera2D.gd" id="4_e6nis"]
+[ext_resource type="Texture2D" uid="uid://cgfp808fwvwe2" path="res://uistuff/powerui.png" id="5_j07yd"]
+[ext_resource type="Texture2D" uid="uid://oqfo5i7bo0ew" path="res://uistuff/woodui.png" id="6_708gw"]
+[ext_resource type="Texture2D" uid="uid://cij3ermexjjux" path="res://uistuff/waterui.png" id="7_hrffa"]
+[ext_resource type="Texture2D" uid="uid://d3h27yw28kbem" path="res://uistuff/coalui.png" id="8_00j3h"]
+[ext_resource type="Texture2D" uid="uid://dyxfr110a1xsu" path="res://uistuff/bitsui.png" id="9_oegee"]
+[ext_resource type="Texture2D" uid="uid://dpfsds7gfsk76" path="res://uistuff/foodui.png" id="10_d0gul"]
+[ext_resource type="Script" path="res://TreeButton.gd" id="13_1gwdv"]
+[ext_resource type="Texture2D" uid="uid://bcv16fbofoniw" path="res://uistuff/oilui.png" id="13_xw0jl"]
 
 [sub_resource type="Environment" id="Environment_xdtrx"]
 background_mode = 3
@@ -40,3 +48,53 @@ position = Vector2(3, 2)
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
 script = ExtResource("4_e6nis")
+
+[node name="Panel" type="Panel" parent="Camera2D"]
+offset_left = 167.0
+offset_top = -130.0
+offset_right = 234.0
+offset_bottom = 7.0
+
+[node name="Powerui" type="Sprite2D" parent="Camera2D"]
+position = Vector2(177.375, -119.25)
+scale = Vector2(0.0375, 0.049)
+texture = ExtResource("5_j07yd")
+
+[node name="Woodui" type="Sprite2D" parent="Camera2D"]
+position = Vector2(176, -100)
+scale = Vector2(0.0719999, 0.078)
+texture = ExtResource("6_708gw")
+
+[node name="Waterui" type="Sprite2D" parent="Camera2D"]
+position = Vector2(175, -83)
+scale = Vector2(0.088889, 0.104861)
+texture = ExtResource("7_hrffa")
+
+[node name="Coalui" type="Sprite2D" parent="Camera2D"]
+position = Vector2(176, -66)
+scale = Vector2(0.025, 0.0280001)
+texture = ExtResource("8_00j3h")
+
+[node name="Oilui" type="Sprite2D" parent="Camera2D"]
+position = Vector2(176, -49)
+scale = Vector2(0.058, 0.051)
+texture = ExtResource("13_xw0jl")
+
+[node name="Bitsui" type="Sprite2D" parent="Camera2D"]
+position = Vector2(179, -31)
+scale = Vector2(0.0405405, 0.0486111)
+texture = ExtResource("9_oegee")
+
+[node name="Foodui" type="Sprite2D" parent="Camera2D"]
+position = Vector2(183, -9)
+scale = Vector2(0.0705128, 0.0673077)
+texture = ExtResource("10_d0gul")
+
+[node name="TreeButton" type="Button" parent="Camera2D"]
+offset_left = -179.0
+offset_top = 102.0
+offset_right = -159.0
+offset_bottom = 110.0
+theme_override_font_sizes/font_size = 10
+text = "Tree "
+script = ExtResource("13_1gwdv")
