@@ -25,6 +25,8 @@ func _input(event):
 	# Mouse in viewport coordinates.
 	
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed() == true and mouseontilemap:
+		if get_cell_source_id(0, Vector2i(floor(get_local_mouse_position()/32))) < 1:
+			GlobalVars.placedbuildings += 1
 		set_cell(0, Vector2i(floor(get_local_mouse_position()/32)), placingvalue, Vector2i(0,0))
 
 

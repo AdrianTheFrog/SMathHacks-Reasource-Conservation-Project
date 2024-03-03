@@ -5,3 +5,4 @@ var stime = ""
 var power = 0
 var spower = ""
 var season = 0
+var placedbuildings = 0
