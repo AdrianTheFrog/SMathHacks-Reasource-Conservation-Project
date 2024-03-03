@@ -1,5 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://dlewy2ppts022"]
 
+
 [ext_resource type="TileSet" uid="uid://bigbiha614tnl" path="res://tileset.tres" id="1_dur42"]
 [ext_resource type="Script" path="res://main scene.gd" id="1_xhh2k"]
 [ext_resource type="TileSet" uid="uid://cxb4ovjti0sjt" path="res://buildings tileset.tres" id="2_0onu8"]
@@ -180,7 +181,6 @@ offset_right = 943.0
 offset_bottom = 411.0
 scale = Vector2(0.05, 0.05)
 theme_override_font_sizes/font_size = 400
-script = ExtResource("15_pnjia")
 
 [node name="woodui" type="Label" parent="Camera2D"]
 offset_left = 186.0
