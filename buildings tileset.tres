@@ -1,10 +1,10 @@
 [gd_resource type="TileSet" load_steps=11 format=3 uid="uid://cxb4ovjti0sjt"]
 
-[ext_resource type="Texture2D" uid="uid://8b7hjcpc2mu7" path="res://Buildings/waterpump.png.png" id="1_afksc"]
 [ext_resource type="Texture2D" uid="uid://di5j467k5krmv" path="res://Buildings/coal plant.png" id="1_ybimb"]
 [ext_resource type="Texture2D" uid="uid://c3v2swb7c5og5" path="res://Buildings/tree.png" id="2_qqfw6"]
-[ext_resource type="Texture2D" uid="uid://dk2a3wa2myagb" path="res://Buildings/recycleplant.png" id="4_l08ib"]
-[ext_resource type="Texture2D" uid="uid://cu63ja3mh1ean" path="res://Buildings/oil pump jack.png" id="5_g4qdl"]
+[ext_resource type="Texture2D" uid="uid://dsd7lc7wgxyia" path="res://Buildings/recycleplant.png" id="4_l08ib"]
+[ext_resource type="Texture2D" uid="uid://qdb34pc4qj1e" path="res://Buildings/waterpump.png" id="4_rekhq"]
+[ext_resource type="Texture2D" uid="uid://bac8prbpduq4d" path="res://Buildings/oil pump 2.png" id="5_4ofnk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m1562"]
 texture = ExtResource("2_qqfw6")
@@ -28,18 +28,18 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6, -0.25, 7.75, -0.75, 16, 16, 12.75, 16, -11.25, 13.75)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 7, 10, 7, 10, 16, -8, 16, -9, 14, -12, 14, -12, 10, -9, 10)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m4d3j"]
-texture = ExtResource("1_afksc")
+texture = ExtResource("4_rekhq")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 3.5, 8.25, 2.75, 16, 16, 12.75, 16, -16, 16)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 7, 10, 7, 10, 10, 13, 12, 13, 14, 10, 16, -8, 16, -9, 15, -14, 15, -16, 13, -16, 10, -14, 8, -9, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nfbcp"]
-texture = ExtResource("5_g4qdl")
+texture = ExtResource("5_4ofnk")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
