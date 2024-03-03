@@ -1,5 +1,5 @@
 extends TileMap
-var placingvalue = 0
+var placingvalue = 1
 var mouseontilemap = true
 
 	
