@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://Camera2D.gd" id="4_e6nis"]
 [ext_resource type="Script" path="res://TimePowerLabel.gd" id="10_5bt7y"]
 [ext_resource type="Texture2D" uid="uid://dihjnfo6fb26n" path="res://uistuff/powerNew.png" id="12_dd6jf"]
+[ext_resource type="StyleBox" uid="uid://c47e603ajv5n5" path="res://box2.tres" id="12_mqr45"]
 [ext_resource type="Texture2D" uid="uid://brk4t453wq7ej" path="res://uistuff/woodNew.png" id="13_5cnpj"]
 [ext_resource type="Texture2D" uid="uid://c5m6qvhxx8pmq" path="res://uistuff/waterNew.png" id="14_63uny"]
 [ext_resource type="Theme" uid="uid://bpvpg7fswoucc" path="res://Buttonthemes.tres" id="15_07nre"]
@@ -26,14 +27,6 @@ glow_intensity = 0.89
 glow_blend_mode = 1
 glow_hdr_threshold = 0.79
 glow_hdr_luminance_cap = 249.14
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kpdka"]
-bg_color = Color(0.227451, 0.266667, 0.4, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vh38i"]
 bg_color = Color(0, 0, 0, 1)
@@ -105,7 +98,7 @@ offset_left = 167.0
 offset_top = -130.0
 offset_right = 234.0
 offset_bottom = -17.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_kpdka")
+theme_override_styles/panel = ExtResource("12_mqr45")
 
 [node name="Powerui" type="Sprite2D" parent="Camera2D"]
 texture_filter = 1
@@ -269,133 +262,143 @@ show_percentage = false
 
 [node name="oilpumppanel" type="Panel" parent="Camera2D"]
 visible = false
-offset_left = -199.0
-offset_top = -108.0
-offset_right = -12.0
-offset_bottom = 13.0
+offset_left = -234.0
+offset_top = -3.0
+offset_right = -47.0
+offset_bottom = 60.0
+theme_override_styles/panel = ExtResource("12_mqr45")
 
 [node name="oiltext" type="Label" parent="Camera2D"]
 visible = false
-offset_left = -194.0
-offset_top = -104.0
-offset_right = 3173.0
-offset_bottom = 2136.0
+offset_left = -228.0
+offset_right = 3332.0
+offset_bottom = 1140.0
 scale = Vector2(0.05, 0.05)
-theme_override_font_sizes/font_size = 300
+theme_override_fonts/font = ExtResource("17_dsinh")
+theme_override_font_sizes/font_size = 200
 text = "Oil pump:
-      Costs 5 bits
-Generates 1 oil per sec
-Produces no emmisons
+-Costs 5 bits
+-Generates 1 oil per sec
+-Produces no emmisons
 "
 
 [node name="recyclepanel" type="Panel" parent="Camera2D"]
 visible = false
-offset_left = -205.0
-offset_top = -120.0
-offset_right = -11.0
-offset_bottom = 13.0
+offset_left = -234.0
+offset_top = -17.0
+offset_right = -40.0
+offset_bottom = 60.0
+theme_override_styles/panel = ExtResource("12_mqr45")
 
 [node name="recycletext" type="Label" parent="Camera2D"]
 visible = false
-offset_left = -196.0
-offset_top = -111.0
-offset_right = 3290.0
-offset_bottom = 1946.0
+offset_left = -227.0
+offset_top = -10.0
+offset_right = 3259.0
+offset_bottom = 2047.0
 scale = Vector2(0.05, 0.05)
-theme_override_font_sizes/font_size = 300
+theme_override_fonts/font = ExtResource("17_dsinh")
+theme_override_font_sizes/font_size = 200
 text = "Recycle Plant
-Costs 10 bits
-Uses 4 wood per second
-Generates 1 power ps
-No Carbon generation
-"
+-Costs 10 bits
+-Uses 4 wood per second
+-Generates 1 power ps
+-No Carbon generation"
 
 [node name="powerplantpanel" type="Panel" parent="Camera2D"]
 visible = false
-offset_left = -204.0
-offset_top = -130.0
-offset_right = -10.0
-offset_bottom = 3.0
+offset_left = -234.0
+offset_top = -17.0
+offset_right = -53.0
+offset_bottom = 60.0
+theme_override_styles/panel = ExtResource("12_mqr45")
 
 [node name="powerplanttext" type="Label" parent="Camera2D"]
 visible = false
-offset_left = -194.0
-offset_top = -118.0
-offset_right = 3262.0
-offset_bottom = 1939.0
+offset_left = -226.0
+offset_top = -10.0
+offset_right = 3230.0
+offset_bottom = 2047.0
 scale = Vector2(0.05, 0.05)
-theme_override_font_sizes/font_size = 300
+theme_override_fonts/font = ExtResource("17_dsinh")
+theme_override_font_sizes/font_size = 200
 text = "Power Plant
-Costs 5 bits
-Uses 2 coal or oil
-Generates 1 power ps
-High Carbon generation
+-Costs 5 bits
+-Uses 2 coal or oil
+-Generates 1 power ps
+-High Carbon generation
 "
 
 [node name="waterplantpanel" type="Panel" parent="Camera2D"]
 visible = false
-offset_left = -203.0
-offset_top = -129.0
-offset_right = -9.0
-offset_bottom = 4.0
+offset_left = -234.0
+offset_top = -18.0
+offset_right = -57.0
+offset_bottom = 60.0
+theme_override_styles/panel = ExtResource("12_mqr45")
 
 [node name="waterplanttext" type="Label" parent="Camera2D"]
 visible = false
-offset_left = -191.0
-offset_top = -116.0
-offset_right = 3190.0
-offset_bottom = 1941.0
+offset_left = -226.0
+offset_top = -11.0
+offset_right = 3155.0
+offset_bottom = 2046.0
 scale = Vector2(0.05, 0.05)
-theme_override_font_sizes/font_size = 300
+theme_override_fonts/font = ExtResource("17_dsinh")
+theme_override_font_sizes/font_size = 200
 text = "Water Plant
-Costs 5 bits
-Uses 2 power per sec
-Generates 1 water ps
-Low Carbon generation
+-Costs 5 bits
+-Uses 2 power per sec
+-Generates 1 water ps
+-Low Carbon generation
 "
 
 [node name="coalminepanel" type="Panel" parent="Camera2D"]
 visible = false
-offset_left = -204.0
-offset_top = -128.0
-offset_right = -10.0
-offset_bottom = 5.0
+offset_left = -234.0
+offset_top = -17.0
+offset_right = -60.0
+offset_bottom = 60.0
+theme_override_styles/panel = ExtResource("12_mqr45")
 
 [node name="coalminetext" type="Label" parent="Camera2D"]
 visible = false
-offset_left = -193.0
-offset_top = -117.0
-offset_right = 3234.0
-offset_bottom = 1940.0
+offset_left = -227.0
+offset_top = -11.0
+offset_right = 3200.0
+offset_bottom = 2046.0
 scale = Vector2(0.05, 0.05)
-theme_override_font_sizes/font_size = 300
+theme_override_fonts/font = ExtResource("17_dsinh")
+theme_override_font_sizes/font_size = 200
 text = "Coal Mine
-Costs 5 bits
-Uses 2 power per sec
-Generates 1 coal ps
-Med Carbon generation
+-Costs 5 bits
+-Uses 2 power per sec
+-Generates 1 coal ps
+-Med Carbon generation
 "
 
 [node name="bankpanel" type="Panel" parent="Camera2D"]
 visible = false
-offset_left = -205.0
-offset_top = -124.0
-offset_right = -11.0
-offset_bottom = 9.0
+offset_left = -234.0
+offset_top = -19.0
+offset_right = -52.0
+offset_bottom = 60.0
+theme_override_styles/panel = ExtResource("12_mqr45")
 
 [node name="banktext" type="Label" parent="Camera2D"]
 visible = false
-offset_left = -193.0
-offset_top = -111.0
-offset_right = 3188.0
-offset_bottom = 1946.0
+offset_left = -225.0
+offset_top = -12.0
+offset_right = 3156.0
+offset_bottom = 2045.0
 scale = Vector2(0.05, 0.05)
-theme_override_font_sizes/font_size = 300
+theme_override_fonts/font = ExtResource("17_dsinh")
+theme_override_font_sizes/font_size = 200
 text = "Bank
-Costs 5 bits
-Uses 5 power ps
-Generates 1 bit ps
-Low Carbon generation
+-Costs 5 bits
+-Uses 5 power ps
+-Generates 1 bit ps
+-Low Carbon generation
 "
 
 [node name="banktext2" type="Label" parent="Camera2D"]
