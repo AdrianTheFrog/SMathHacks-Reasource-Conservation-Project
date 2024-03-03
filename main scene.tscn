@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dlewy2ppts022"]
+[gd_scene load_steps=23 format=3 uid="uid://dlewy2ppts022"]
 
 [ext_resource type="TileSet" uid="uid://bigbiha614tnl" path="res://tileset.tres" id="1_dur42"]
 [ext_resource type="Script" path="res://main scene.gd" id="1_xhh2k"]
@@ -26,6 +26,14 @@ glow_intensity = 0.89
 glow_blend_mode = 1
 glow_hdr_threshold = 0.79
 glow_hdr_luminance_cap = 249.14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ea7v5"]
+bg_color = Color(0.227451, 0.266667, 0.4, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vh38i"]
 bg_color = Color(0, 0, 0, 1)
@@ -97,6 +105,7 @@ offset_left = 167.0
 offset_top = -130.0
 offset_right = 234.0
 offset_bottom = -17.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ea7v5")
 
 [node name="Powerui" type="Sprite2D" parent="Camera2D"]
 texture_filter = 1
