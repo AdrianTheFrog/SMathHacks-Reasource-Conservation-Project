@@ -22,8 +22,10 @@ func _process(delta):
 	$Camera2D/oilui.text = ":" + str(oil)
 	$Camera2D/bitsui.text = ":" + str(bits)
 	$Camera2D/foodui.text = ":" + str(food)
+	
+		
 	pass
 
 
 func _on_timer_timeout():
-	$Camera2D/ProgressBar.value += 1 #put multiplicaton from buildings here
+	$Camera2D/Climatechange.value += 1 #put multiplicaton from buildings here
