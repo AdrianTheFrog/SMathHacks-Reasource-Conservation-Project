@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://d3h27yw28kbem" path="res://uistuff/coalui.png" id="8_00j3h"]
 [ext_resource type="Texture2D" uid="uid://dyxfr110a1xsu" path="res://uistuff/bitsui.png" id="9_oegee"]
 [ext_resource type="Texture2D" uid="uid://bcv16fbofoniw" path="res://uistuff/oilui.png" id="13_xw0jl"]
-[ext_resource type="Theme" path="res://Buttonthemes.tres" id="15_07nre"]
+[ext_resource type="Theme" uid="uid://b75f4m6ahlfqu" path="res://Buttonthemes.tres" id="15_07nre"]
 [ext_resource type="Script" path="res://powerui.gd" id="15_pnjia"]
 
 [sub_resource type="Environment" id="Environment_xdtrx"]
@@ -55,7 +55,11 @@ unique_name_in_owner = true
 texture_filter = 3
 position = Vector2(3, 2)
 
-[node name="Timer" type="Timer" parent="."]
+[node name="timer for climatechange" type="Timer" parent="."]
+autostart = true
+
+[node name="timer for ui" type="Timer" parent="."]
+wait_time = 5.0
 autostart = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -142,6 +146,28 @@ theme_override_font_sizes/font_size = 250
 toggle_mode = true
 text = "Recycle Plant"
 
+[node name="Bankbutton" type="Button" parent="Camera2D"]
+offset_left = -213.0
+offset_top = 59.0
+offset_right = 1267.0
+offset_bottom = 409.0
+scale = Vector2(0.05, 0.05)
+theme = ExtResource("15_07nre")
+theme_override_font_sizes/font_size = 250
+toggle_mode = true
+text = "Bank"
+
+[node name="Coalminebutton" type="Button" parent="Camera2D"]
+offset_left = -133.0
+offset_top = 60.0
+offset_right = 1687.0
+offset_bottom = 410.0
+scale = Vector2(0.05, 0.05)
+theme = ExtResource("15_07nre")
+theme_override_font_sizes/font_size = 250
+toggle_mode = true
+text = "Coal Mine"
+
 [node name="powerui" type="Label" parent="Camera2D"]
 offset_left = 183.0
 offset_top = -135.0
@@ -201,8 +227,126 @@ theme_override_styles/background = SubResource("StyleBoxFlat_vh38i")
 theme_override_styles/fill = SubResource("StyleBoxFlat_lo0op")
 show_percentage = false
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="button_up" from="Camera2D/Powerplantbutton" to="TileMap2" method="_on_powerplantbutton_button_up"]
+[node name="oilpumppanel" type="Panel" parent="Camera2D"]
+visible = false
+offset_left = -199.0
+offset_top = -108.0
+offset_right = -12.0
+offset_bottom = 13.0
+
+[node name="oiltext" type="Label" parent="Camera2D"]
+visible = false
+offset_left = -194.0
+offset_top = -104.0
+offset_right = -14.0
+offset_bottom = -3.0
+text = "Oil pump:
+      Costs 5 bits
+Generates 1 oil per sec
+Produces no emmisons
+"
+
+[node name="recyclepanel" type="Panel" parent="Camera2D"]
+visible = false
+offset_left = -205.0
+offset_top = -120.0
+offset_right = -11.0
+offset_bottom = 13.0
+
+[node name="recycletext" type="Label" parent="Camera2D"]
+visible = false
+offset_left = -202.0
+offset_top = -116.0
+offset_right = -10.0
+offset_bottom = 11.0
+text = "Recycle Plant
+Costs 10 bits
+Uses 4 wood per second
+Generates 1 power ps
+No Carbon generation
+"
+
+[node name="powerplantpanel" type="Panel" parent="Camera2D"]
+visible = false
+offset_left = -204.0
+offset_top = -130.0
+offset_right = -10.0
+offset_bottom = 3.0
+
+[node name="powerplanttext" type="Label" parent="Camera2D"]
+visible = false
+offset_left = -201.0
+offset_top = -126.0
+offset_right = -16.0
+offset_bottom = 1.0
+text = "Power Plant
+Costs 5 bits
+Uses 2 coal or oil
+Generates 1 power ps
+High Carbon generation
+"
+
+[node name="waterplantpanel" type="Panel" parent="Camera2D"]
+visible = false
+offset_left = -203.0
+offset_top = -129.0
+offset_right = -9.0
+offset_bottom = 4.0
+
+[node name="waterplanttext" type="Label" parent="Camera2D"]
+visible = false
+offset_left = -200.0
+offset_top = -127.0
+offset_right = -15.0
+text = "Water Plant
+Costs 5 bits
+Uses 2 power per sec
+Generates 1 water ps
+Low Carbon generation
+"
+
+[node name="coalminepanel" type="Panel" parent="Camera2D"]
+visible = false
+offset_left = -204.0
+offset_top = -128.0
+offset_right = -10.0
+offset_bottom = 5.0
+
+[node name="coalminetext" type="Label" parent="Camera2D"]
+visible = false
+offset_left = -199.0
+offset_top = -126.0
+offset_right = -14.0
+offset_bottom = 1.0
+text = "Coal Mine
+Costs 5 bits
+Uses 2 power per sec
+Generates 1 coal ps
+Med Carbon generation
+"
+
+[node name="bankpanel" type="Panel" parent="Camera2D"]
+visible = false
+offset_left = -205.0
+offset_top = -124.0
+offset_right = -11.0
+offset_bottom = 9.0
+
+[node name="banktext" type="Label" parent="Camera2D"]
+visible = false
+offset_left = -200.0
+offset_top = -124.0
+offset_right = -15.0
+offset_bottom = 3.0
+text = "Bank
+Costs 5 bits
+Uses 5 power ps
+Generates 1 bit ps
+Low Carbon generation
+"
+
+[connection signal="timeout" from="timer for climatechange" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="timer for ui" to="." method="_on_timer_for_ui_timeout"]
 [connection signal="pressed" from="Camera2D/Powerplantbutton" to="." method="_on_powerplantbutton_pressed"]
 [connection signal="pressed" from="Camera2D/Powerplantbutton" to="TileMap2" method="_on_powerplantbutton_pressed"]
 [connection signal="toggled" from="Camera2D/Powerplantbutton" to="TileMap2" method="_on_powerplantbutton_toggled"]
@@ -212,3 +356,5 @@ show_percentage = false
 [connection signal="pressed" from="Camera2D/Oilpumpbutton" to="TileMap2" method="_on_oilpumpbutton_pressed"]
 [connection signal="pressed" from="Camera2D/Recyclebutton" to="." method="_on_recyclebutton_pressed"]
 [connection signal="pressed" from="Camera2D/Recyclebutton" to="TileMap2" method="_on_recyclebutton_pressed"]
+[connection signal="pressed" from="Camera2D/Bankbutton" to="." method="_on_bankbutton_pressed"]
+[connection signal="pressed" from="Camera2D/Coalminebutton" to="." method="_on_coalminebutton_pressed"]
