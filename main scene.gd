@@ -7,4 +7,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	$Node2D/power.text = (':'+ str($Camera2D/Powerui.power))
+	#$Node2D/power.text = (str(power))
+	pass

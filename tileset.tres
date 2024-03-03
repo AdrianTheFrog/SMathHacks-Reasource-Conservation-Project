@@ -1,10 +1,9 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bigbiha614tnl"]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://duwyit720ltpx"]
 
-[ext_resource type="Texture2D" uid="uid://bmb5ouninih8o" path="res://tilemap.png" id="1_yh88g"]
+[ext_resource type="Texture2D" uid="uid://bmb5ouninih8o" path="res://tilemap.png" id="1_iqvrl"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fm7kg"]
-resource_name = "terrain tileset"
-texture = ExtResource("1_yh88g")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2pv00"]
+texture = ExtResource("1_iqvrl")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -16,4 +15,4 @@ texture = ExtResource("1_yh88g")
 2:2/0 = 0
 
 [resource]
-sources/0 = SubResource("TileSetAtlasSource_fm7kg")
+sources/0 = SubResource("TileSetAtlasSource_2pv00")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3v2swb7c5og5"
-path="res://.godot/imported/tree.png-e0869f9fb9c148a5baf00bb62a85d6ad.ctex"
+uid="uid://di5j467k5krmv"
+path="res://.godot/imported/coal plant.png-be240822d7bce112b44ca4879047d6c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tree.png"
-dest_files=["res://.godot/imported/tree.png-e0869f9fb9c148a5baf00bb62a85d6ad.ctex"]
+source_file="res://Buildings/coal plant.png"
+dest_files=["res://.godot/imported/coal plant.png-be240822d7bce112b44ca4879047d6c8.ctex"]
 
 [params]
 

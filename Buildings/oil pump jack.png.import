@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di5j467k5krmv"
-path="res://.godot/imported/coal plant.png-94c4504f77f1f6bcfa0a0da08ef44fce.ctex"
+uid="uid://cu63ja3mh1ean"
+path="res://.godot/imported/oil pump jack.png-44ee8e216eb40c1ac0161dcd0061a0e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://coal plant.png"
-dest_files=["res://.godot/imported/coal plant.png-94c4504f77f1f6bcfa0a0da08ef44fce.ctex"]
+source_file="res://Buildings/oil pump jack.png"
+dest_files=["res://.godot/imported/oil pump jack.png-44ee8e216eb40c1ac0161dcd0061a0e1.ctex"]
 
 [params]
 
