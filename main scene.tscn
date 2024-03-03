@@ -110,7 +110,6 @@ offset_bottom = 448.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
 theme_override_font_sizes/font_size = 250
-toggle_mode = true
 text = "Power Plant"
 
 [node name="Waterpumpbutton" type="Button" parent="Camera2D"]
@@ -121,7 +120,6 @@ offset_bottom = 456.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
 theme_override_font_sizes/font_size = 250
-toggle_mode = true
 text = "Water Plant"
 
 [node name="Oilpumpbutton" type="Button" parent="Camera2D"]
@@ -132,7 +130,6 @@ offset_bottom = 433.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
 theme_override_font_sizes/font_size = 250
-toggle_mode = true
 text = "Oil Pump"
 
 [node name="Recyclebutton" type="Button" parent="Camera2D"]
@@ -143,7 +140,6 @@ offset_bottom = 433.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
 theme_override_font_sizes/font_size = 250
-toggle_mode = true
 text = "Recycle Plant"
 
 [node name="Bankbutton" type="Button" parent="Camera2D"]
@@ -154,7 +150,6 @@ offset_bottom = 409.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
 theme_override_font_sizes/font_size = 250
-toggle_mode = true
 text = "Bank"
 
 [node name="Coalminebutton" type="Button" parent="Camera2D"]
@@ -165,7 +160,6 @@ offset_bottom = 410.0
 scale = Vector2(0.05, 0.05)
 theme = ExtResource("15_07nre")
 theme_override_font_sizes/font_size = 250
-toggle_mode = true
 text = "Coal Mine"
 
 [node name="powerui" type="Label" parent="Camera2D"]
@@ -238,8 +232,10 @@ offset_bottom = 13.0
 visible = false
 offset_left = -194.0
 offset_top = -104.0
-offset_right = -14.0
-offset_bottom = -3.0
+offset_right = 3173.0
+offset_bottom = 2136.0
+scale = Vector2(0.05, 0.05)
+theme_override_font_sizes/font_size = 300
 text = "Oil pump:
       Costs 5 bits
 Generates 1 oil per sec
@@ -255,10 +251,12 @@ offset_bottom = 13.0
 
 [node name="recycletext" type="Label" parent="Camera2D"]
 visible = false
-offset_left = -202.0
-offset_top = -116.0
-offset_right = -10.0
-offset_bottom = 11.0
+offset_left = -196.0
+offset_top = -111.0
+offset_right = 3290.0
+offset_bottom = 1946.0
+scale = Vector2(0.05, 0.05)
+theme_override_font_sizes/font_size = 300
 text = "Recycle Plant
 Costs 10 bits
 Uses 4 wood per second
@@ -275,10 +273,12 @@ offset_bottom = 3.0
 
 [node name="powerplanttext" type="Label" parent="Camera2D"]
 visible = false
-offset_left = -201.0
-offset_top = -126.0
-offset_right = -16.0
-offset_bottom = 1.0
+offset_left = -194.0
+offset_top = -118.0
+offset_right = 3262.0
+offset_bottom = 1939.0
+scale = Vector2(0.05, 0.05)
+theme_override_font_sizes/font_size = 300
 text = "Power Plant
 Costs 5 bits
 Uses 2 coal or oil
@@ -295,9 +295,12 @@ offset_bottom = 4.0
 
 [node name="waterplanttext" type="Label" parent="Camera2D"]
 visible = false
-offset_left = -200.0
-offset_top = -127.0
-offset_right = -15.0
+offset_left = -191.0
+offset_top = -116.0
+offset_right = 3190.0
+offset_bottom = 1941.0
+scale = Vector2(0.05, 0.05)
+theme_override_font_sizes/font_size = 300
 text = "Water Plant
 Costs 5 bits
 Uses 2 power per sec
@@ -314,10 +317,12 @@ offset_bottom = 5.0
 
 [node name="coalminetext" type="Label" parent="Camera2D"]
 visible = false
-offset_left = -199.0
-offset_top = -126.0
-offset_right = -14.0
-offset_bottom = 1.0
+offset_left = -193.0
+offset_top = -117.0
+offset_right = 3234.0
+offset_bottom = 1940.0
+scale = Vector2(0.05, 0.05)
+theme_override_font_sizes/font_size = 300
 text = "Coal Mine
 Costs 5 bits
 Uses 2 power per sec
@@ -334,10 +339,12 @@ offset_bottom = 9.0
 
 [node name="banktext" type="Label" parent="Camera2D"]
 visible = false
-offset_left = -200.0
-offset_top = -124.0
-offset_right = -15.0
-offset_bottom = 3.0
+offset_left = -193.0
+offset_top = -111.0
+offset_right = 3188.0
+offset_bottom = 1946.0
+scale = Vector2(0.05, 0.05)
+theme_override_font_sizes/font_size = 300
 text = "Bank
 Costs 5 bits
 Uses 5 power ps
