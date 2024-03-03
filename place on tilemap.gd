@@ -1,6 +1,6 @@
 extends TileMap
 var placingvalue = 0
-
+var mouseontilemap = true
 
 	
 func _on_powerplantbutton_pressed():
@@ -24,8 +24,31 @@ func _on_coalminebutton_pressed():
 func _input(event):
 	# Mouse in viewport coordinates.
 	
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed() == true:
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed() == true and mouseontilemap:
 		set_cell(0, Vector2i(floor(get_local_mouse_position()/32)), placingvalue, Vector2i(0,0))
-		print(ceil(get_local_mouse_position()/32))
-		print(placingvalue)
 
+
+func _on_powerplantbutton_mouse_entered():
+	mouseontilemap = false
+func _on_powerplantbutton_mouse_exited():
+	mouseontilemap = true
+func _on_waterpumpbutton_mouse_entered():
+	mouseontilemap = false
+func _on_waterpumpbutton_mouse_exited():
+	mouseontilemap = true
+func _on_oilpumpbutton_mouse_entered():
+	mouseontilemap = false
+func _on_oilpumpbutton_mouse_exited():
+	mouseontilemap = true
+func _on_recyclebutton_mouse_entered():
+	mouseontilemap = false
+func _on_recyclebutton_mouse_exited():
+	mouseontilemap = true
+func _on_bankbutton_mouse_entered():
+	mouseontilemap = false
+func _on_bankbutton_mouse_exited():
+	mouseontilemap = true
+func _on_coalminebutton_mouse_entered():
+	mouseontilemap = false
+func _on_coalminebutton_mouse_exited():
+	mouseontilemap = true
