@@ -47,3 +47,7 @@ func _process(delta):
 	#round to viewport pixel, not scene pixel
 	%AnimatedSprite2D.position = round(position*ceil(get_viewport().size.x/500.))/float(ceil(get_viewport().size.x/500.)) - position
 
+
+
+func _on_powerplantbutton_pressed():
+	pass # Replace with function body.

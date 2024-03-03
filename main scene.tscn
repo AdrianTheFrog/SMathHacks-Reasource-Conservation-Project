@@ -1,5 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dlewy2ppts022"]
-
+[gd_scene load_steps=20 format=3 uid="uid://dlewy2ppts022"]
 
 [ext_resource type="TileSet" uid="uid://bigbiha614tnl" path="res://tileset.tres" id="1_dur42"]
 [ext_resource type="Script" path="res://main scene.gd" id="1_xhh2k"]
@@ -16,10 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://d3h27yw28kbem" path="res://uistuff/coalui.png" id="8_00j3h"]
 [ext_resource type="Texture2D" uid="uid://dyxfr110a1xsu" path="res://uistuff/bitsui.png" id="9_oegee"]
 [ext_resource type="Texture2D" uid="uid://bcv16fbofoniw" path="res://uistuff/oilui.png" id="13_xw0jl"]
-
 [ext_resource type="Theme" uid="uid://bpvpg7fswoucc" path="res://Buttonthemes.tres" id="15_07nre"]
-
-[ext_resource type="Script" path="res://powerui.gd" id="15_pnjia"]
 
 [sub_resource type="Environment" id="Environment_xdtrx"]
 background_mode = 3

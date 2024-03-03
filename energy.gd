@@ -36,7 +36,7 @@ func _process(delta):
 	GlobalVars.stime = "Day " + sday + ", " + sseason + " " + stod
 	GlobalVars.spower = str(round(get_energy(GlobalVars.season, time)*100)/100).pad_decimals(2)
 	
-	print(GlobalVars.stime + " " + GlobalVars.spower + " kilowatts")
+	#print(GlobalVars.stime + " " + GlobalVars.spower + " kilowatts")
 
 
 func get_energy(s, t):
